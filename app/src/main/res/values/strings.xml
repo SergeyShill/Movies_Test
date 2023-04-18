@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="home">Главная</string>
+    <string name="favourites">Избранное</string>
+    <string name="search">Поиск</string>
+    <string name="popular">Популярное</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="popular_1">Популярное_1</string>
+    <string name="popular_2">Популярное_2</string>
+    <string name="popular_3">Популярное_3</string>
+
+
+</resources>
