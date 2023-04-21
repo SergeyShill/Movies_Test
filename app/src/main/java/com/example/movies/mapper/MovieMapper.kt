@@ -1,8 +1,8 @@
 package com.example.movies.mapper
 
 
-import com.example.movies.model.Movie250
-import com.example.movies.network.model.Top250DataDetail
+import com.example.movies.data.model.`object`.Movie250
+import com.example.movies.data.model.body.Top250DataDetail
 
 fun Top250DataDetail.bodyToModel(): Movie250 {
     return Movie250(

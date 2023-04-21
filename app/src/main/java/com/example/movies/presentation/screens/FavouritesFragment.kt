@@ -1,4 +1,4 @@
-package com.example.movies
+package com.example.movies.presentation.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.movies.databinding.FragmentFavouritesBinding
-import com.example.movies.databinding.FragmentHomeBinding
-import com.example.movies.repository.MovieRepository
+import com.example.movies.data.repository.MovieRepository
 
 class FavouritesFragment : Fragment() {
 

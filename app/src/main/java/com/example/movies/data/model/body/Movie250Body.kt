@@ -1,5 +1,6 @@
-package com.example.movies.network.model
+package com.example.movies.data.model.body
 
+import com.example.movies.data.model.body.Top250DataDetail
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 

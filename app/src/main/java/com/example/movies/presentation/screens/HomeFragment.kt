@@ -1,12 +1,12 @@
-package com.example.movies
+package com.example.movies.presentation.screens
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentActivity
-import com.example.movies.adapter.PagerAdapter
+import com.example.movies.R
+import com.example.movies.presentation.adapter.PagerAdapter
 import com.example.movies.databinding.FragmentHomeBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -51,7 +51,9 @@ class HomeFragment : Fragment() {
 
 
     companion object {
-        @JvmStatic
-        fun newInstance() = HomeFragment()
+        fun newInstance(): HomeFragment {
+            return HomeFragment()
+        }
     }
+
 }

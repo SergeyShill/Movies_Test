@@ -1,6 +1,6 @@
-package com.example.movies.network
+package com.example.movies.data.repository.network
 
-import com.example.movies.network.model.Movie250Body
+import com.example.movies.data.model.body.Movie250Body
 import retrofit2.Response
 import retrofit2.http.GET
 

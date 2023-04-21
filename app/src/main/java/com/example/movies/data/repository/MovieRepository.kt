@@ -1,8 +1,8 @@
-package com.example.movies.repository
+package com.example.movies.data.repository
 
 import com.example.movies.mapper.bodyToModel
-import com.example.movies.model.Movie250
-import com.example.movies.network.NetworkUtil
+import com.example.movies.data.model.`object`.Movie250
+import com.example.movies.di.NetworkUtil
 
 class MovieRepository {
 

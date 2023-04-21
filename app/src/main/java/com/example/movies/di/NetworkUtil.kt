@@ -1,6 +1,7 @@
-package com.example.movies.network
+package com.example.movies.di
 
 import com.example.movies.Const
+import com.example.movies.data.repository.network.MovieApi
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
