@@ -15,19 +15,21 @@ import com.example.movies.presentation.adapterRV.MoviesAdapter
 class PopularFragment : Fragment() {
 
 
+    private val viewModel: PopularViewModel by viewModels()
+
 
     private var _binding: FragmentPopularBinding? = null
     private val binding
         get() = _binding!!
 
 
-
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_popular, container, false)
+    ): View {
+        _binding= FragmentPopularBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onDestroyView() {
@@ -43,7 +45,8 @@ class PopularFragment : Fragment() {
         requireView().findViewById<RecyclerView>(R.id.moviesRV).adapter = adapter
         binding.moviesRV.adapter = adapter
 
-
-
+        viewModel.movies.observe(viewLifecycleOwner) {
+            adapter.submitList(it)
+        }
     }
 }

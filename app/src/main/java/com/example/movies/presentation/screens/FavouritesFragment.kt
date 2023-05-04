@@ -12,7 +12,7 @@ class FavouritesFragment : Fragment() {
 
     private lateinit var binding: FragmentFavouritesBinding
 
-    val repository = MovieRepository()
+    private val repository = MovieRepository()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
         binding = FragmentFavouritesBinding.inflate(inflater, container, false)
